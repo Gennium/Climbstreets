@@ -16,10 +16,4 @@
 <<<<<<< HEAD
 //Ok ...
 =======
-/// MINHA ALTERACAO ESTA AKI //Ok ..
->>>>>>> 05b1673f6fb5b97121058b056294c91ac452c068
-=======
-/// MINHA ALTERACAO ESTA AKI //Ok ..
->>>>>>> 05b1673f6fb5b97121058b056294c91ac452c068
-
 @end
