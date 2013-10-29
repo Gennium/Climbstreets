@@ -10,7 +10,11 @@
 
 @implementation Via
 @synthesize name;
+<   <<<<<< HEAD
 
 
 //Teste 1	
+=======
+ 
+>>>>>>> f2e1fae8173fe79ca8ceeaa7da3ad6476a6cdd5e
 @end
