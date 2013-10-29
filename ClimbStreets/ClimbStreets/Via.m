@@ -10,11 +10,12 @@
 
 @implementation Via
 @synthesize name;
+ 
 
 <<<<<<< HEAD
-
-/// MINHA ALTERACAO ESTA AKI
-=======
 //Ok ...
->>>>>>> d1d188bc9ba597e9438c6ba5c24eff36c632c92b
+=======
+/// MINHA ALTERACAO ESTA AKI //Ok ..
+>>>>>>> 05b1673f6fb5b97121058b056294c91ac452c068
+
 @end
