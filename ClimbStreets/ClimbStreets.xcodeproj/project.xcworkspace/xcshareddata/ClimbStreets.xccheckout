@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E954D6FC-075D-4F2E-981A-CA5E96A1AD2E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ClimbStreets</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>27978201-EC59-4ECE-AF09-B44A1739EE56</key>
+		<string>https://github.com/Gennium/Climbstreets.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ClimbStreets/ClimbStreets.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>27978201-EC59-4ECE-AF09-B44A1739EE56</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Gennium/Climbstreets.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>27978201-EC59-4ECE-AF09-B44A1739EE56</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>27978201-EC59-4ECE-AF09-B44A1739EE56</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Climbstreets</string>
+		</dict>
+	</array>
+</dict>
+</plist>
