@@ -11,9 +11,5 @@
 @implementation Via
 @synthesize name;
  
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 //Ok ...
-=======
 @end
