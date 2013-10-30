@@ -33,7 +33,7 @@
                     <view key="view" contentMode="scaleToFill" id="LYm-sb-k5b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.1148945523621403" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.13862248149735909" green="0.64489215353260865" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gx9-Dd-lfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
