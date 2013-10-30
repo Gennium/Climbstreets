@@ -13,7 +13,6 @@
 		DE292DAD1820218500EEE353 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE292DAB1820218500EEE353 /* InfoPlist.strings */; };
 		DE292DAF1820218500EEE353 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE292DAE1820218500EEE353 /* main.m */; };
 		DE292DB31820218500EEE353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE292DB21820218500EEE353 /* AppDelegate.m */; };
-		DE292DB51820218500EEE353 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE292DB41820218500EEE353 /* Images.xcassets */; };
 		DE292DBC1820218500EEE353 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DBB1820218500EEE353 /* XCTest.framework */; };
 		DE292DBD1820218500EEE353 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DA21820218500EEE353 /* Foundation.framework */; };
 		DE292DBE1820218500EEE353 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DA61820218500EEE353 /* UIKit.framework */; };
@@ -25,6 +24,7 @@
 		DE292DD81820240100EEE353 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DD71820240100EEE353 /* CoreMotion.framework */; };
 		DE292DDA1820240800EEE353 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DD91820240800EEE353 /* QuartzCore.framework */; };
 		DE292DDE1820244400EEE353 /* PanicARKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE292DDD1820244400EEE353 /* PanicARKitResources.bundle */; };
+		DE99CE01182166AC001FE087 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99CE00182166AC001FE087 /* MainStoryboard.storyboard */; };
 		DEF015CF182007B7005912F1 /* PanicARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF015CE182007B7005912F1 /* PanicARKit.framework */; };
 		DEF015D1182007DE005912F1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF015D0182007DE005912F1 /* SenTestingKit.framework */; };
 		DEF015D51820087A005912F1 /* Via.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF015D41820087A005912F1 /* Via.m */; };
@@ -51,7 +51,6 @@
 		DE292DB01820218500EEE353 /* ClimbStreets-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClimbStreets-Prefix.pch"; sourceTree = "<group>"; };
 		DE292DB11820218500EEE353 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE292DB21820218500EEE353 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DE292DB41820218500EEE353 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DE292DBA1820218500EEE353 /* ClimbStreetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimbStreetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE292DBB1820218500EEE353 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DE292DC31820218500EEE353 /* ClimbStreetsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClimbStreetsTests-Info.plist"; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		DE292DD71820240100EEE353 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		DE292DD91820240800EEE353 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DE292DDD1820244400EEE353 /* PanicARKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PanicARKitResources.bundle; sourceTree = "<group>"; };
+		DE99CE00182166AC001FE087 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DEF015CE182007B7005912F1 /* PanicARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PanicARKit.framework; sourceTree = "<group>"; };
 		DEF015D0182007DE005912F1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DEF015D31820087A005912F1 /* Via.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Via.h; sourceTree = "<group>"; };
@@ -144,8 +144,8 @@
 				DEF015D218200841005912F1 /* Objects */,
 				DE292DB11820218500EEE353 /* AppDelegate.h */,
 				DE292DB21820218500EEE353 /* AppDelegate.m */,
-				DE292DB41820218500EEE353 /* Images.xcassets */,
 				DE292DA91820218500EEE353 /* Supporting Files */,
+				DE99CE00182166AC001FE087 /* MainStoryboard.storyboard */,
 			);
 			path = ClimbStreets;
 			sourceTree = "<group>";
@@ -263,8 +263,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE99CE01182166AC001FE087 /* MainStoryboard.storyboard in Resources */,
 				DE292DAD1820218500EEE353 /* InfoPlist.strings in Resources */,
-				DE292DB51820218500EEE353 /* Images.xcassets in Resources */,
 				DE292DDE1820244400EEE353 /* PanicARKitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
