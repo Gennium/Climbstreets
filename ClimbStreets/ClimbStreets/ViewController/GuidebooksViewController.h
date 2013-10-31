@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  GuidebooksViewController.h
 //  ClimbStreets
 //
 //  Created by 4g on 10/30/13.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface GuidebooksViewController : ViewController
 
 @end

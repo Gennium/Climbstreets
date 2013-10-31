@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MenuViewController.h
 //  ClimbStreets
 //
 //  Created by 4g on 10/30/13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface MenuViewController : UIViewController
 
 @end

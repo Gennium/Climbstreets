@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E954D6FC-075D-4F2E-981A-CA5E96A1AD2E</string>
+	<string>A7E75A44-A6CB-4311-BA46-0E74B436653F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ClimbStreets</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>27978201-EC59-4ECE-AF09-B44A1739EE56</key>
+		<key>4AB41A8C-806E-481C-AA8E-71D092E2FEA1</key>
 		<string>https://github.com/Gennium/Climbstreets.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ClimbStreets/ClimbStreets.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>27978201-EC59-4ECE-AF09-B44A1739EE56</key>
+		<key>4AB41A8C-806E-481C-AA8E-71D092E2FEA1</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>27978201-EC59-4ECE-AF09-B44A1739EE56</string>
+	<string>4AB41A8C-806E-481C-AA8E-71D092E2FEA1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>27978201-EC59-4ECE-AF09-B44A1739EE56</string>
+			<string>4AB41A8C-806E-481C-AA8E-71D092E2FEA1</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Climbstreets</string>
 		</dict>
