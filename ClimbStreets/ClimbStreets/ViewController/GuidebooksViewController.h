@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@interface GuidebooksViewController : UIViewController
+@interface GuidebooksViewController : ViewController
 
 @end

@@ -16,6 +16,7 @@
 		DE04CAF31821862A00FEB617 /* GuidebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04CAF21821862A00FEB617 /* GuidebooksViewController.m */; };
 		DE04CAF71821864200FEB617 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04CAF61821864200FEB617 /* ProfileViewController.m */; };
 		DE04CAFD18218DD000FEB617 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04CAFC18218DD000FEB617 /* MenuViewController.m */; };
+		DE1748EB18227D3000E6EDC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1748EA18227D3000E6EDC2 /* ViewController.m */; };
 		DE26581D182190D200A7A2E4 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE26581C182190D200A7A2E4 /* MenuButton.m */; };
 		DEA026BD1821680A003276D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026BC1821680A003276D1 /* Foundation.framework */; };
 		DEA026BF1821680A003276D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026BE1821680A003276D1 /* CoreGraphics.framework */; };
@@ -61,6 +62,8 @@
 		DE04CAF61821864200FEB617 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		DE04CAFB18218DD000FEB617 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ViewController/MenuViewController.h; sourceTree = "<group>"; };
 		DE04CAFC18218DD000FEB617 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ViewController/MenuViewController.m; sourceTree = "<group>"; };
+		DE1748E918227D3000E6EDC2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ViewController/ViewController.h; sourceTree = "<group>"; };
+		DE1748EA18227D3000E6EDC2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ViewController/ViewController.m; sourceTree = "<group>"; };
 		DE26581B182190D200A7A2E4 /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuButton.h; path = ViewController/MenuButton.h; sourceTree = "<group>"; };
 		DE26581C182190D200A7A2E4 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuButton.m; path = ViewController/MenuButton.m; sourceTree = "<group>"; };
 		DEA026B91821680A003276D1 /* ClimbStreets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimbStreets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +149,8 @@
 				DE04CAF21821862A00FEB617 /* GuidebooksViewController.m */,
 				DE04CAF51821864200FEB617 /* ProfileViewController.h */,
 				DE04CAF61821864200FEB617 /* ProfileViewController.m */,
+				DE1748E918227D3000E6EDC2 /* ViewController.h */,
+				DE1748EA18227D3000E6EDC2 /* ViewController.m */,
 			);
 			name = Telas;
 			sourceTree = "<group>";
@@ -372,6 +377,7 @@
 				DE04CAF01821861300FEB617 /* FriendsViewController.m in Sources */,
 				DEA026C91821680A003276D1 /* main.m in Sources */,
 				DEA0270118216969003276D1 /* HomeViewController.m in Sources */,
+				DE1748EB18227D3000E6EDC2 /* ViewController.m in Sources */,
 				DEA0270618217B4A003276D1 /* ECSlidingViewController.m in Sources */,
 				DE04CAF71821864200FEB617 /* ProfileViewController.m in Sources */,
 				DE26581D182190D200A7A2E4 /* MenuButton.m in Sources */,

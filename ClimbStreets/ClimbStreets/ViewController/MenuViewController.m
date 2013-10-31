@@ -57,8 +57,7 @@
         posY+= _posY;
         MenuButton *button = [[MenuButton alloc] init];
         [self.view addSubview:[button MenuButton:b WithImage:image Rect:rect]];
-        [buttons addObject:button];
-        NSLog(@"%@ -- %f - %f", b, posY, height);
+        [buttons addObject:button]; 
     }
 }
 
