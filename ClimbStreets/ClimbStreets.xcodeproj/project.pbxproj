@@ -24,10 +24,8 @@
 		DE292DD6182023F400EEE353 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DD5182023F400EEE353 /* CoreLocation.framework */; };
 		DE292DD81820240100EEE353 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DD71820240100EEE353 /* CoreMotion.framework */; };
 		DE292DDA1820240800EEE353 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DD91820240800EEE353 /* QuartzCore.framework */; };
-		DE292DDE1820244400EEE353 /* PanicARKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE292DDD1820244400EEE353 /* PanicARKitResources.bundle */; };
-		DEF015CF182007B7005912F1 /* PanicARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF015CE182007B7005912F1 /* PanicARKit.framework */; };
 		DEF015D1182007DE005912F1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF015D0182007DE005912F1 /* SenTestingKit.framework */; };
-		DEF015D51820087A005912F1 /* Via.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF015D41820087A005912F1 /* Via.m */; };
+		DEF38AC71822A7BA00ED914F /* PanicARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF38AC61822A7BA00ED914F /* PanicARKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +60,8 @@
 		DE292DD5182023F400EEE353 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DE292DD71820240100EEE353 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		DE292DD91820240800EEE353 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		DE292DDD1820244400EEE353 /* PanicARKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PanicARKitResources.bundle; sourceTree = "<group>"; };
-		DEF015CE182007B7005912F1 /* PanicARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PanicARKit.framework; sourceTree = "<group>"; };
 		DEF015D0182007DE005912F1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DEF015D31820087A005912F1 /* Via.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Via.h; sourceTree = "<group>"; };
-		DEF015D41820087A005912F1 /* Via.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Via.m; sourceTree = "<group>"; };
+		DEF38AC61822A7BA00ED914F /* PanicARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PanicARKit.framework; path = ../Framework/PanicARKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF38AC71822A7BA00ED914F /* PanicARKit.framework in Frameworks */,
 				DEF015D1182007DE005912F1 /* SenTestingKit.framework in Frameworks */,
-				DEF015CF182007B7005912F1 /* PanicARKit.framework in Frameworks */,
 				DE292DDA1820240800EEE353 /* QuartzCore.framework in Frameworks */,
 				DE292DD81820240100EEE353 /* CoreMotion.framework in Frameworks */,
 				DE292DD6182023F400EEE353 /* CoreLocation.framework in Frameworks */,
@@ -103,7 +98,6 @@
 		DE292D961820218500EEE353 = {
 			isa = PBXGroup;
 			children = (
-				DE292DDD1820244400EEE353 /* PanicARKitResources.bundle */,
 				DE292DA81820218500EEE353 /* ClimbStreets */,
 				DE292DC11820218500EEE353 /* ClimbStreetsTests */,
 				DE292DA11820218500EEE353 /* Frameworks */,
@@ -123,8 +117,8 @@
 		DE292DA11820218500EEE353 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DEF38AC61822A7BA00ED914F /* PanicARKit.framework */,
 				DEF015D0182007DE005912F1 /* SenTestingKit.framework */,
-				DEF015CE182007B7005912F1 /* PanicARKit.framework */,
 				DE292DD91820240800EEE353 /* QuartzCore.framework */,
 				DE292DD71820240100EEE353 /* CoreMotion.framework */,
 				DE292DD5182023F400EEE353 /* CoreLocation.framework */,
@@ -182,8 +176,6 @@
 		DEF015D218200841005912F1 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				DEF015D31820087A005912F1 /* Via.h */,
-				DEF015D41820087A005912F1 /* Via.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -265,7 +257,6 @@
 			files = (
 				DE292DAD1820218500EEE353 /* InfoPlist.strings in Resources */,
 				DE292DB51820218500EEE353 /* Images.xcassets in Resources */,
-				DE292DDE1820244400EEE353 /* PanicARKitResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEF015D51820087A005912F1 /* Via.m in Sources */,
 				DE292DB31820218500EEE353 /* AppDelegate.m in Sources */,
 				DE292DAF1820218500EEE353 /* main.m in Sources */,
 			);
@@ -410,6 +400,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					/Users/4g/Documents/Climbstreets/ClimbStreets,
 					"/Users/4g/https:/gennium.visualstudio.com/DefaultCollection/_git/Climbstreets/ClimbStreets",
+					"/Users/4g/https:/gennium.visualstudio.com/DefaultCollection/_git/Climbstreets/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClimbStreets/ClimbStreets-Prefix.pch";
@@ -429,6 +420,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					/Users/4g/Documents/Climbstreets/ClimbStreets,
 					"/Users/4g/https:/gennium.visualstudio.com/DefaultCollection/_git/Climbstreets/ClimbStreets",
+					"/Users/4g/https:/gennium.visualstudio.com/DefaultCollection/_git/Climbstreets/Framework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClimbStreets/ClimbStreets-Prefix.pch";
