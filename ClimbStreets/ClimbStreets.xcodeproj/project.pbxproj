@@ -26,6 +26,8 @@
 		DE292DDA1820240800EEE353 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DD91820240800EEE353 /* QuartzCore.framework */; };
 		DEF015D1182007DE005912F1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF015D0182007DE005912F1 /* SenTestingKit.framework */; };
 		DEF38AC71822A7BA00ED914F /* PanicARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF38AC61822A7BA00ED914F /* PanicARKit.framework */; };
+		DEF38AD1182401EC00ED914F /* AbstractDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF38AD0182401EC00ED914F /* AbstractDAO.m */; };
+		DEF38AD31824022700ED914F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF38AD21824022700ED914F /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		DE292DD91820240800EEE353 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DEF015D0182007DE005912F1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DEF38AC61822A7BA00ED914F /* PanicARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PanicARKit.framework; path = ../Framework/PanicARKit.framework; sourceTree = "<group>"; };
+		DEF38ACF182401EC00ED914F /* AbstractDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractDAO.h; sourceTree = "<group>"; };
+		DEF38AD0182401EC00ED914F /* AbstractDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractDAO.m; sourceTree = "<group>"; };
+		DEF38AD21824022700ED914F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF38AD31824022700ED914F /* CoreData.framework in Frameworks */,
 				DEF38AC71822A7BA00ED914F /* PanicARKit.framework in Frameworks */,
 				DEF015D1182007DE005912F1 /* SenTestingKit.framework in Frameworks */,
 				DE292DDA1820240800EEE353 /* QuartzCore.framework in Frameworks */,
@@ -117,6 +123,7 @@
 		DE292DA11820218500EEE353 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DEF38AD21824022700ED914F /* CoreData.framework */,
 				DEF38AC61822A7BA00ED914F /* PanicARKit.framework */,
 				DEF015D0182007DE005912F1 /* SenTestingKit.framework */,
 				DE292DD91820240800EEE353 /* QuartzCore.framework */,
@@ -135,6 +142,7 @@
 		DE292DA81820218500EEE353 /* ClimbStreets */ = {
 			isa = PBXGroup;
 			children = (
+				DEF38ACE182401CB00ED914F /* DataBase */,
 				DEF015D218200841005912F1 /* Objects */,
 				DE292DB11820218500EEE353 /* AppDelegate.h */,
 				DE292DB21820218500EEE353 /* AppDelegate.m */,
@@ -178,6 +186,15 @@
 			children = (
 			);
 			name = Objects;
+			sourceTree = "<group>";
+		};
+		DEF38ACE182401CB00ED914F /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				DEF38ACF182401EC00ED914F /* AbstractDAO.h */,
+				DEF38AD0182401EC00ED914F /* AbstractDAO.m */,
+			);
+			name = DataBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE292DB31820218500EEE353 /* AppDelegate.m in Sources */,
+				DEF38AD1182401EC00ED914F /* AbstractDAO.m in Sources */,
 				DE292DAF1820218500EEE353 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
