@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DEA026B81821680A003276D1"
+               BlueprintIdentifier = "DE292D9E1820218500EEE353"
                BuildableName = "ClimbStreets.app"
                BlueprintName = "ClimbStreets"
                ReferencedContainer = "container:ClimbStreets.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DEA026D91821680B003276D1"
+               BlueprintIdentifier = "DE292DB91820218500EEE353"
                BuildableName = "ClimbStreetsTests.xctest"
                BlueprintName = "ClimbStreetsTests"
                ReferencedContainer = "container:ClimbStreets.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DEA026B81821680A003276D1"
+            BlueprintIdentifier = "DE292D9E1820218500EEE353"
             BuildableName = "ClimbStreets.app"
             BlueprintName = "ClimbStreets"
             ReferencedContainer = "container:ClimbStreets.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DEA026B81821680A003276D1"
+            BlueprintIdentifier = "DE292D9E1820218500EEE353"
             BuildableName = "ClimbStreets.app"
             BlueprintName = "ClimbStreets"
             ReferencedContainer = "container:ClimbStreets.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DEA026B81821680A003276D1"
+            BlueprintIdentifier = "DE292D9E1820218500EEE353"
             BuildableName = "ClimbStreets.app"
             BlueprintName = "ClimbStreets"
             ReferencedContainer = "container:ClimbStreets.xcodeproj">
