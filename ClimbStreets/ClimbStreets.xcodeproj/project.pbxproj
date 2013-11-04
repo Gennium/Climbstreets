@@ -18,6 +18,8 @@
 		DE04CAFD18218DD000FEB617 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04CAFC18218DD000FEB617 /* MenuViewController.m */; };
 		DE1748EB18227D3000E6EDC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1748EA18227D3000E6EDC2 /* ViewController.m */; };
 		DE26581D182190D200A7A2E4 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE26581C182190D200A7A2E4 /* MenuButton.m */; };
+		DE8F65711827CC5800A3B308 /* 005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE8F656F1827CC5800A3B308 /* 005.jpg */; };
+		DE8F65721827CC5800A3B308 /* 009.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE8F65701827CC5800A3B308 /* 009.jpg */; };
 		DEA026BD1821680A003276D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026BC1821680A003276D1 /* Foundation.framework */; };
 		DEA026BF1821680A003276D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026BE1821680A003276D1 /* CoreGraphics.framework */; };
 		DEA026C11821680A003276D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026C01821680A003276D1 /* UIKit.framework */; };
@@ -66,6 +68,8 @@
 		DE1748EA18227D3000E6EDC2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ViewController/ViewController.m; sourceTree = "<group>"; };
 		DE26581B182190D200A7A2E4 /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuButton.h; path = ViewController/MenuButton.h; sourceTree = "<group>"; };
 		DE26581C182190D200A7A2E4 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuButton.m; path = ViewController/MenuButton.m; sourceTree = "<group>"; };
+		DE8F656F1827CC5800A3B308 /* 005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005.jpg; sourceTree = "<group>"; };
+		DE8F65701827CC5800A3B308 /* 009.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 009.jpg; sourceTree = "<group>"; };
 		DEA026B91821680A003276D1 /* ClimbStreets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimbStreets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA026BC1821680A003276D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DEA026BE1821680A003276D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +124,8 @@
 		DE04CAE11821856500FEB617 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				DE8F656F1827CC5800A3B308 /* 005.jpg */,
+				DE8F65701827CC5800A3B308 /* 009.jpg */,
 				DE04CAE21821856C00FEB617 /* Menu */,
 			);
 			name = Image;
@@ -346,9 +352,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8F65721827CC5800A3B308 /* 009.jpg in Resources */,
 				DE04CAE7182185AE00FEB617 /* Find.png in Resources */,
 				DEA026D51821680A003276D1 /* Images.xcassets in Resources */,
 				DE04CAE8182185AE00FEB617 /* Friends.png in Resources */,
+				DE8F65711827CC5800A3B308 /* 005.jpg in Resources */,
 				DEA026C71821680A003276D1 /* InfoPlist.strings in Resources */,
 				DEA026D01821680A003276D1 /* Main.storyboard in Resources */,
 				DE04CAE9182185AE00FEB617 /* Guidebooks.png in Resources */,

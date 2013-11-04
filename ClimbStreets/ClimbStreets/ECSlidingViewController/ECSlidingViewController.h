@@ -48,7 +48,9 @@ typedef enum {
   /** Left side of screen */
   ECLeft,
   /** Right side of screen */
-  ECRight
+  ECRight,
+  ECUP,
+  ECDOWN
 } ECSide;
 
 /** @constant ECResetStrategy top view behavior while anchored. */

@@ -11,7 +11,6 @@
 #import "MenuViewController.h"
 
 @interface ViewController ()
-@property UIImageView* panArea;
 @end
 
 @implementation ViewController
@@ -30,6 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    //self.transitionController = [[TransitionDelegate alloc] init];
     
     if( ![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]])
         self.slidingViewController.underLeftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
@@ -48,10 +48,5 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
--(void) Pan:(UIGestureRecognizer *) sender
-{
-    NSLog(@"Pan");
 }
 @end

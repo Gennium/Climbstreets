@@ -343,17 +343,28 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
   
   if (side == ECLeft) {
     newCenter = -self.resettedCenter;
-  } else if (side == ECRight) {
+  } else if (side == ECRight) {			
     newCenter = self.screenWidth + self.resettedCenter;
+  } else if (side == ECUP){
+      newCenter = -self.resettedCenterHeight;
+  } else if (side == ECDOWN){
+      newCenter = self.screenHeight + self.resettedCenterHeight;
   }
   
-  [self topViewHorizontalCenterWillChange:newCenter];
+    
+  if( side == ECRight || side == ECLeft )
+    [self topViewHorizontalCenterWillChange:newCenter];
   
   [UIView animateWithDuration:0.25f animations:^{
     if (animations) {
       animations();
     }
-    [self updateTopViewHorizontalCenter:newCenter];
+    
+    if( side == ECUP || side == ECDOWN )
+        [self updateTopViewVerticalCenter:newCenter];
+    else
+        [self updateTopViewHorizontalCenter:newCenter];
+      
   } completion:^(BOOL finished){
     if (complete) {
       complete();
@@ -366,6 +377,7 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
     });
   }];
 }
+
 
 - (void)resetTopView
 {
@@ -424,12 +436,17 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
   self.topView.layer.position = center;
 }
 
+- (void)updateTopViewVerticalCenter:(CGFloat)newVerticalCenter
+{
+    CGPoint center = self.topView.center;
+    center.y = newVerticalCenter;
+    self.topView.layer.position = center;
+}
+
 - (void)topViewHorizontalCenterWillChange:(CGFloat)newHorizontalCenter
 {
-	
 
   CGPoint center = self.topView.center;
-  
 	if (center.x >= self.resettedCenter && newHorizontalCenter == self.resettedCenter) {
 		dispatch_async(dispatch_get_main_queue(), ^{
 			[[NSNotificationCenter defaultCenter] postNotificationName:ECSlidingViewUnderLeftWillDisappear object:self userInfo:nil];
@@ -505,9 +522,19 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
   return ceil(self.screenWidth / 2);
 }
 
+- (CGFloat)resettedCenterHeight
+{
+    return ceil(self.screenHeight/ 2);
+}
+
 - (CGFloat)screenWidth
 {
   return [self screenWidthForOrientation:[UIApplication sharedApplication].statusBarOrientation];
+}
+
+- (CGFloat)screenHeight
+{
+    return [UIScreen mainScreen].bounds.size.height;
 }
 
 - (CGFloat)screenWidthForOrientation:(UIInterfaceOrientation)orientation
