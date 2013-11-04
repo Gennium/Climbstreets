@@ -7,209 +7,285 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE292DA31820218500EEE353 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DA21820218500EEE353 /* Foundation.framework */; };
-		DE292DA51820218500EEE353 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DA41820218500EEE353 /* CoreGraphics.framework */; };
-		DE292DA71820218500EEE353 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DA61820218500EEE353 /* UIKit.framework */; };
-		DE292DAD1820218500EEE353 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE292DAB1820218500EEE353 /* InfoPlist.strings */; };
-		DE292DAF1820218500EEE353 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE292DAE1820218500EEE353 /* main.m */; };
-		DE292DB31820218500EEE353 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE292DB21820218500EEE353 /* AppDelegate.m */; };
-		DE292DB51820218500EEE353 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE292DB41820218500EEE353 /* Images.xcassets */; };
-		DE292DBC1820218500EEE353 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DBB1820218500EEE353 /* XCTest.framework */; };
-		DE292DBD1820218500EEE353 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DA21820218500EEE353 /* Foundation.framework */; };
-		DE292DBE1820218500EEE353 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DA61820218500EEE353 /* UIKit.framework */; };
-		DE292DC61820218500EEE353 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE292DC41820218500EEE353 /* InfoPlist.strings */; };
-		DE292DC81820218500EEE353 /* ClimbStreetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE292DC71820218500EEE353 /* ClimbStreetsTests.m */; };
-		DE292DD2182023E200EEE353 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DD1182023E200EEE353 /* MapKit.framework */; };
-		DE292DD4182023EE00EEE353 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DD3182023EE00EEE353 /* AVFoundation.framework */; };
-		DE292DD6182023F400EEE353 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DD5182023F400EEE353 /* CoreLocation.framework */; };
-		DE292DD81820240100EEE353 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DD71820240100EEE353 /* CoreMotion.framework */; };
-		DE292DDA1820240800EEE353 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE292DD91820240800EEE353 /* QuartzCore.framework */; };
-		DEF015D1182007DE005912F1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF015D0182007DE005912F1 /* SenTestingKit.framework */; };
-		DEF38AC71822A7BA00ED914F /* PanicARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF38AC61822A7BA00ED914F /* PanicARKit.framework */; };
-		DEF38AD1182401EC00ED914F /* AbstractDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF38AD0182401EC00ED914F /* AbstractDAO.m */; };
-		DEF38AD31824022700ED914F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF38AD21824022700ED914F /* CoreData.framework */; };
-		DEF38AD61824037100ED914F /* ClimbStreets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEF38AD41824037100ED914F /* ClimbStreets.xcdatamodeld */; };
+		DE04CAE7182185AE00FEB617 /* Find.png in Resources */ = {isa = PBXBuildFile; fileRef = DE04CAE3182185AE00FEB617 /* Find.png */; };
+		DE04CAE8182185AE00FEB617 /* Friends.png in Resources */ = {isa = PBXBuildFile; fileRef = DE04CAE4182185AE00FEB617 /* Friends.png */; };
+		DE04CAE9182185AE00FEB617 /* Guidebooks.png in Resources */ = {isa = PBXBuildFile; fileRef = DE04CAE5182185AE00FEB617 /* Guidebooks.png */; };
+		DE04CAEA182185AE00FEB617 /* Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = DE04CAE6182185AE00FEB617 /* Profile.png */; };
+		DE04CAED182185F700FEB617 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04CAEC182185F700FEB617 /* FindViewController.m */; };
+		DE04CAF01821861300FEB617 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04CAEF1821861300FEB617 /* FriendsViewController.m */; };
+		DE04CAF31821862A00FEB617 /* GuidebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04CAF21821862A00FEB617 /* GuidebooksViewController.m */; };
+		DE04CAF71821864200FEB617 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04CAF61821864200FEB617 /* ProfileViewController.m */; };
+		DE04CAFD18218DD000FEB617 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04CAFC18218DD000FEB617 /* MenuViewController.m */; };
+		DE1748EB18227D3000E6EDC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1748EA18227D3000E6EDC2 /* ViewController.m */; };
+		DE26581D182190D200A7A2E4 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE26581C182190D200A7A2E4 /* MenuButton.m */; };
+		DE8F65711827CC5800A3B308 /* 005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE8F656F1827CC5800A3B308 /* 005.jpg */; };
+		DE8F65721827CC5800A3B308 /* 009.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE8F65701827CC5800A3B308 /* 009.jpg */; };
+		DEA026BD1821680A003276D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026BC1821680A003276D1 /* Foundation.framework */; };
+		DEA026BF1821680A003276D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026BE1821680A003276D1 /* CoreGraphics.framework */; };
+		DEA026C11821680A003276D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026C01821680A003276D1 /* UIKit.framework */; };
+		DEA026C71821680A003276D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEA026C51821680A003276D1 /* InfoPlist.strings */; };
+		DEA026C91821680A003276D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA026C81821680A003276D1 /* main.m */; };
+		DEA026CD1821680A003276D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA026CC1821680A003276D1 /* AppDelegate.m */; };
+		DEA026D01821680A003276D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA026CE1821680A003276D1 /* Main.storyboard */; };
+		DEA026D51821680A003276D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA026D41821680A003276D1 /* Images.xcassets */; };
+		DEA026DC1821680B003276D1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026DB1821680B003276D1 /* XCTest.framework */; };
+		DEA026DD1821680B003276D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026BC1821680A003276D1 /* Foundation.framework */; };
+		DEA026DE1821680B003276D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026C01821680A003276D1 /* UIKit.framework */; };
+		DEA026E61821680B003276D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEA026E41821680B003276D1 /* InfoPlist.strings */; };
+		DEA026E81821680B003276D1 /* ClimbStreetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA026E71821680B003276D1 /* ClimbStreetsTests.m */; };
+		DEA026FB18216901003276D1 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA026FA18216901003276D1 /* InitViewController.m */; };
+		DEA0270118216969003276D1 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA0270018216969003276D1 /* HomeViewController.m */; };
+		DEA0270618217B4A003276D1 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA0270318217B4A003276D1 /* ECSlidingViewController.m */; };
+		DEA0270718217B4A003276D1 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA0270518217B4A003276D1 /* UIImage+ImageWithUIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DE292DBF1820218500EEE353 /* PBXContainerItemProxy */ = {
+		DEA026DF1821680B003276D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DE292D971820218500EEE353 /* Project object */;
+			containerPortal = DEA026B11821680A003276D1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DE292D9E1820218500EEE353;
+			remoteGlobalIDString = DEA026B81821680A003276D1;
 			remoteInfo = ClimbStreets;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE292D9F1820218500EEE353 /* ClimbStreets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimbStreets.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE292DA21820218500EEE353 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DE292DA41820218500EEE353 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DE292DA61820218500EEE353 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		DE292DAA1820218500EEE353 /* ClimbStreets-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClimbStreets-Info.plist"; sourceTree = "<group>"; };
-		DE292DAC1820218500EEE353 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DE292DAE1820218500EEE353 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DE292DB01820218500EEE353 /* ClimbStreets-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClimbStreets-Prefix.pch"; sourceTree = "<group>"; };
-		DE292DB11820218500EEE353 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DE292DB21820218500EEE353 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DE292DB41820218500EEE353 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DE292DBA1820218500EEE353 /* ClimbStreetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimbStreetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE292DBB1820218500EEE353 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		DE292DC31820218500EEE353 /* ClimbStreetsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClimbStreetsTests-Info.plist"; sourceTree = "<group>"; };
-		DE292DC51820218500EEE353 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DE292DC71820218500EEE353 /* ClimbStreetsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClimbStreetsTests.m; sourceTree = "<group>"; };
-		DE292DD1182023E200EEE353 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		DE292DD3182023EE00EEE353 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		DE292DD5182023F400EEE353 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		DE292DD71820240100EEE353 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		DE292DD91820240800EEE353 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		DEF015D0182007DE005912F1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DEF38AC61822A7BA00ED914F /* PanicARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PanicARKit.framework; path = ../Framework/PanicARKit.framework; sourceTree = "<group>"; };
-		DEF38ACF182401EC00ED914F /* AbstractDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractDAO.h; sourceTree = "<group>"; };
-		DEF38AD0182401EC00ED914F /* AbstractDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractDAO.m; sourceTree = "<group>"; };
-		DEF38AD21824022700ED914F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DEF38AD51824037100ED914F /* ClimbStreets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClimbStreets.xcdatamodel; sourceTree = "<group>"; };
+		DE04CAE3182185AE00FEB617 /* Find.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Find.png; sourceTree = "<group>"; };
+		DE04CAE4182185AE00FEB617 /* Friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Friends.png; sourceTree = "<group>"; };
+		DE04CAE5182185AE00FEB617 /* Guidebooks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guidebooks.png; sourceTree = "<group>"; };
+		DE04CAE6182185AE00FEB617 /* Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Profile.png; sourceTree = "<group>"; };
+		DE04CAEB182185F700FEB617 /* FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FindViewController.h; path = ViewController/FindViewController.h; sourceTree = "<group>"; };
+		DE04CAEC182185F700FEB617 /* FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FindViewController.m; path = ViewController/FindViewController.m; sourceTree = "<group>"; };
+		DE04CAEE1821861300FEB617 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendsViewController.h; path = ViewController/FriendsViewController.h; sourceTree = "<group>"; };
+		DE04CAEF1821861300FEB617 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendsViewController.m; path = ViewController/FriendsViewController.m; sourceTree = "<group>"; };
+		DE04CAF11821862A00FEB617 /* GuidebooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuidebooksViewController.h; path = ViewController/GuidebooksViewController.h; sourceTree = "<group>"; };
+		DE04CAF21821862A00FEB617 /* GuidebooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuidebooksViewController.m; path = ViewController/GuidebooksViewController.m; sourceTree = "<group>"; };
+		DE04CAF51821864200FEB617 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		DE04CAF61821864200FEB617 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		DE04CAFB18218DD000FEB617 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ViewController/MenuViewController.h; sourceTree = "<group>"; };
+		DE04CAFC18218DD000FEB617 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ViewController/MenuViewController.m; sourceTree = "<group>"; };
+		DE1748E918227D3000E6EDC2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ViewController/ViewController.h; sourceTree = "<group>"; };
+		DE1748EA18227D3000E6EDC2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ViewController/ViewController.m; sourceTree = "<group>"; };
+		DE26581B182190D200A7A2E4 /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuButton.h; path = ViewController/MenuButton.h; sourceTree = "<group>"; };
+		DE26581C182190D200A7A2E4 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuButton.m; path = ViewController/MenuButton.m; sourceTree = "<group>"; };
+		DE8F656F1827CC5800A3B308 /* 005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005.jpg; sourceTree = "<group>"; };
+		DE8F65701827CC5800A3B308 /* 009.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 009.jpg; sourceTree = "<group>"; };
+		DEA026B91821680A003276D1 /* ClimbStreets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimbStreets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA026BC1821680A003276D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DEA026BE1821680A003276D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DEA026C01821680A003276D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DEA026C41821680A003276D1 /* ClimbStreets-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClimbStreets-Info.plist"; sourceTree = "<group>"; };
+		DEA026C61821680A003276D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DEA026C81821680A003276D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEA026CA1821680A003276D1 /* ClimbStreets-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClimbStreets-Prefix.pch"; sourceTree = "<group>"; };
+		DEA026CB1821680A003276D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DEA026CC1821680A003276D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DEA026CF1821680A003276D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEA026D41821680A003276D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DEA026DA1821680B003276D1 /* ClimbStreetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimbStreetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA026DB1821680B003276D1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DEA026E31821680B003276D1 /* ClimbStreetsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClimbStreetsTests-Info.plist"; sourceTree = "<group>"; };
+		DEA026E51821680B003276D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DEA026E71821680B003276D1 /* ClimbStreetsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClimbStreetsTests.m; sourceTree = "<group>"; };
+		DEA026F918216901003276D1 /* InitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitViewController.h; path = ViewController/InitViewController.h; sourceTree = "<group>"; };
+		DEA026FA18216901003276D1 /* InitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitViewController.m; path = ViewController/InitViewController.m; sourceTree = "<group>"; };
+		DEA026FF18216969003276D1 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		DEA0270018216969003276D1 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		DEA0270218217B4A003276D1 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		DEA0270318217B4A003276D1 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		DEA0270418217B4A003276D1 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
+		DEA0270518217B4A003276D1 /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DE292D9C1820218500EEE353 /* Frameworks */ = {
+		DEA026B61821680A003276D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEF38AD31824022700ED914F /* CoreData.framework in Frameworks */,
-				DEF38AC71822A7BA00ED914F /* PanicARKit.framework in Frameworks */,
-				DEF015D1182007DE005912F1 /* SenTestingKit.framework in Frameworks */,
-				DE292DDA1820240800EEE353 /* QuartzCore.framework in Frameworks */,
-				DE292DD81820240100EEE353 /* CoreMotion.framework in Frameworks */,
-				DE292DD6182023F400EEE353 /* CoreLocation.framework in Frameworks */,
-				DE292DD4182023EE00EEE353 /* AVFoundation.framework in Frameworks */,
-				DE292DD2182023E200EEE353 /* MapKit.framework in Frameworks */,
-				DE292DA51820218500EEE353 /* CoreGraphics.framework in Frameworks */,
-				DE292DA71820218500EEE353 /* UIKit.framework in Frameworks */,
-				DE292DA31820218500EEE353 /* Foundation.framework in Frameworks */,
+				DEA026BF1821680A003276D1 /* CoreGraphics.framework in Frameworks */,
+				DEA026C11821680A003276D1 /* UIKit.framework in Frameworks */,
+				DEA026BD1821680A003276D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE292DB71820218500EEE353 /* Frameworks */ = {
+		DEA026D71821680B003276D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE292DBC1820218500EEE353 /* XCTest.framework in Frameworks */,
-				DE292DBE1820218500EEE353 /* UIKit.framework in Frameworks */,
-				DE292DBD1820218500EEE353 /* Foundation.framework in Frameworks */,
+				DEA026DC1821680B003276D1 /* XCTest.framework in Frameworks */,
+				DEA026DE1821680B003276D1 /* UIKit.framework in Frameworks */,
+				DEA026DD1821680B003276D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE292D961820218500EEE353 = {
+		DE04CAE11821856500FEB617 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				DE292DA81820218500EEE353 /* ClimbStreets */,
-				DE292DC11820218500EEE353 /* ClimbStreetsTests */,
-				DE292DA11820218500EEE353 /* Frameworks */,
-				DE292DA01820218500EEE353 /* Products */,
+				DE8F656F1827CC5800A3B308 /* 005.jpg */,
+				DE8F65701827CC5800A3B308 /* 009.jpg */,
+				DE04CAE21821856C00FEB617 /* Menu */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		DE04CAE21821856C00FEB617 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DE04CAE3182185AE00FEB617 /* Find.png */,
+				DE04CAE4182185AE00FEB617 /* Friends.png */,
+				DE04CAE5182185AE00FEB617 /* Guidebooks.png */,
+				DE04CAE6182185AE00FEB617 /* Profile.png */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		DE04CAF81821870100FEB617 /* Telas */ = {
+			isa = PBXGroup;
+			children = (
+				DEA026FF18216969003276D1 /* HomeViewController.h */,
+				DEA0270018216969003276D1 /* HomeViewController.m */,
+				DE04CAEB182185F700FEB617 /* FindViewController.h */,
+				DE04CAEC182185F700FEB617 /* FindViewController.m */,
+				DE04CAEE1821861300FEB617 /* FriendsViewController.h */,
+				DE04CAEF1821861300FEB617 /* FriendsViewController.m */,
+				DE04CAF11821862A00FEB617 /* GuidebooksViewController.h */,
+				DE04CAF21821862A00FEB617 /* GuidebooksViewController.m */,
+				DE04CAF51821864200FEB617 /* ProfileViewController.h */,
+				DE04CAF61821864200FEB617 /* ProfileViewController.m */,
+				DE1748E918227D3000E6EDC2 /* ViewController.h */,
+				DE1748EA18227D3000E6EDC2 /* ViewController.m */,
+			);
+			name = Telas;
+			sourceTree = "<group>";
+		};
+		DE04CAF91821871000FEB617 /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				DEA026F918216901003276D1 /* InitViewController.h */,
+				DEA026FA18216901003276D1 /* InitViewController.m */,
+			);
+			name = Init;
+			sourceTree = "<group>";
+		};
+		DE04CAFA1821871C00FEB617 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DE04CAFB18218DD000FEB617 /* MenuViewController.h */,
+				DE04CAFC18218DD000FEB617 /* MenuViewController.m */,
+				DE26581B182190D200A7A2E4 /* MenuButton.h */,
+				DE26581C182190D200A7A2E4 /* MenuButton.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		DEA026B01821680A003276D1 = {
+			isa = PBXGroup;
+			children = (
+				DEA026C21821680A003276D1 /* ClimbStreets */,
+				DEA026E11821680B003276D1 /* ClimbStreetsTests */,
+				DEA026BB1821680A003276D1 /* Frameworks */,
+				DEA026BA1821680A003276D1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DE292DA01820218500EEE353 /* Products */ = {
+		DEA026BA1821680A003276D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE292D9F1820218500EEE353 /* ClimbStreets.app */,
-				DE292DBA1820218500EEE353 /* ClimbStreetsTests.xctest */,
+				DEA026B91821680A003276D1 /* ClimbStreets.app */,
+				DEA026DA1821680B003276D1 /* ClimbStreetsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE292DA11820218500EEE353 /* Frameworks */ = {
+		DEA026BB1821680A003276D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DEF38AD21824022700ED914F /* CoreData.framework */,
-				DEF38AC61822A7BA00ED914F /* PanicARKit.framework */,
-				DEF015D0182007DE005912F1 /* SenTestingKit.framework */,
-				DE292DD91820240800EEE353 /* QuartzCore.framework */,
-				DE292DD71820240100EEE353 /* CoreMotion.framework */,
-				DE292DD5182023F400EEE353 /* CoreLocation.framework */,
-				DE292DD3182023EE00EEE353 /* AVFoundation.framework */,
-				DE292DD1182023E200EEE353 /* MapKit.framework */,
-				DE292DA21820218500EEE353 /* Foundation.framework */,
-				DE292DA41820218500EEE353 /* CoreGraphics.framework */,
-				DE292DA61820218500EEE353 /* UIKit.framework */,
-				DE292DBB1820218500EEE353 /* XCTest.framework */,
+				DEA026BC1821680A003276D1 /* Foundation.framework */,
+				DEA026BE1821680A003276D1 /* CoreGraphics.framework */,
+				DEA026C01821680A003276D1 /* UIKit.framework */,
+				DEA026DB1821680B003276D1 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DE292DA81820218500EEE353 /* ClimbStreets */ = {
+		DEA026C21821680A003276D1 /* ClimbStreets */ = {
 			isa = PBXGroup;
 			children = (
-				DEF38ACE182401CB00ED914F /* DataBase */,
-				DEF015D218200841005912F1 /* Objects */,
-				DE292DB11820218500EEE353 /* AppDelegate.h */,
-				DE292DB21820218500EEE353 /* AppDelegate.m */,
-				DE292DB41820218500EEE353 /* Images.xcassets */,
-				DE292DA91820218500EEE353 /* Supporting Files */,
+				DE04CAE11821856500FEB617 /* Image */,
+				DEA026F2182168C1003276D1 /* ECSlidingViewController */,
+				DEA026F118216883003276D1 /* ViewController */,
+				DEA026CB1821680A003276D1 /* AppDelegate.h */,
+				DEA026CC1821680A003276D1 /* AppDelegate.m */,
+				DEA026CE1821680A003276D1 /* Main.storyboard */,
+				DEA026D41821680A003276D1 /* Images.xcassets */,
+				DEA026C31821680A003276D1 /* Supporting Files */,
 			);
 			path = ClimbStreets;
 			sourceTree = "<group>";
 		};
-		DE292DA91820218500EEE353 /* Supporting Files */ = {
+		DEA026C31821680A003276D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DE292DAA1820218500EEE353 /* ClimbStreets-Info.plist */,
-				DE292DAB1820218500EEE353 /* InfoPlist.strings */,
-				DE292DAE1820218500EEE353 /* main.m */,
-				DE292DB01820218500EEE353 /* ClimbStreets-Prefix.pch */,
+				DEA026C41821680A003276D1 /* ClimbStreets-Info.plist */,
+				DEA026C51821680A003276D1 /* InfoPlist.strings */,
+				DEA026C81821680A003276D1 /* main.m */,
+				DEA026CA1821680A003276D1 /* ClimbStreets-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DE292DC11820218500EEE353 /* ClimbStreetsTests */ = {
+		DEA026E11821680B003276D1 /* ClimbStreetsTests */ = {
 			isa = PBXGroup;
 			children = (
-				DE292DC71820218500EEE353 /* ClimbStreetsTests.m */,
-				DE292DC21820218500EEE353 /* Supporting Files */,
+				DEA026E71821680B003276D1 /* ClimbStreetsTests.m */,
+				DEA026E21821680B003276D1 /* Supporting Files */,
 			);
 			path = ClimbStreetsTests;
 			sourceTree = "<group>";
 		};
-		DE292DC21820218500EEE353 /* Supporting Files */ = {
+		DEA026E21821680B003276D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DE292DC31820218500EEE353 /* ClimbStreetsTests-Info.plist */,
-				DE292DC41820218500EEE353 /* InfoPlist.strings */,
+				DEA026E31821680B003276D1 /* ClimbStreetsTests-Info.plist */,
+				DEA026E41821680B003276D1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DEF015D218200841005912F1 /* Objects */ = {
+		DEA026F118216883003276D1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DE04CAFA1821871C00FEB617 /* Menu */,
+				DE04CAF91821871000FEB617 /* Init */,
+				DE04CAF81821870100FEB617 /* Telas */,
 			);
-			name = Objects;
+			name = ViewController;
 			sourceTree = "<group>";
 		};
-		DEF38ACE182401CB00ED914F /* DataBase */ = {
+		DEA026F2182168C1003276D1 /* ECSlidingViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DEF38AD41824037100ED914F /* ClimbStreets.xcdatamodeld */,
-				DEF38ACF182401EC00ED914F /* AbstractDAO.h */,
-				DEF38AD0182401EC00ED914F /* AbstractDAO.m */,
+				DEA0270218217B4A003276D1 /* ECSlidingViewController.h */,
+				DEA0270318217B4A003276D1 /* ECSlidingViewController.m */,
+				DEA0270418217B4A003276D1 /* UIImage+ImageWithUIView.h */,
+				DEA0270518217B4A003276D1 /* UIImage+ImageWithUIView.m */,
 			);
-			name = DataBase;
+			path = ECSlidingViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE292D9E1820218500EEE353 /* ClimbStreets */ = {
+		DEA026B81821680A003276D1 /* ClimbStreets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE292DCB1820218500EEE353 /* Build configuration list for PBXNativeTarget "ClimbStreets" */;
+			buildConfigurationList = DEA026EB1821680B003276D1 /* Build configuration list for PBXNativeTarget "ClimbStreets" */;
 			buildPhases = (
-				DE292D9B1820218500EEE353 /* Sources */,
-				DE292D9C1820218500EEE353 /* Frameworks */,
-				DE292D9D1820218500EEE353 /* Resources */,
+				DEA026B51821680A003276D1 /* Sources */,
+				DEA026B61821680A003276D1 /* Frameworks */,
+				DEA026B71821680A003276D1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -217,122 +293,147 @@
 			);
 			name = ClimbStreets;
 			productName = ClimbStreets;
-			productReference = DE292D9F1820218500EEE353 /* ClimbStreets.app */;
+			productReference = DEA026B91821680A003276D1 /* ClimbStreets.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DE292DB91820218500EEE353 /* ClimbStreetsTests */ = {
+		DEA026D91821680B003276D1 /* ClimbStreetsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE292DCE1820218500EEE353 /* Build configuration list for PBXNativeTarget "ClimbStreetsTests" */;
+			buildConfigurationList = DEA026EE1821680B003276D1 /* Build configuration list for PBXNativeTarget "ClimbStreetsTests" */;
 			buildPhases = (
-				DE292DB61820218500EEE353 /* Sources */,
-				DE292DB71820218500EEE353 /* Frameworks */,
-				DE292DB81820218500EEE353 /* Resources */,
+				DEA026D61821680B003276D1 /* Sources */,
+				DEA026D71821680B003276D1 /* Frameworks */,
+				DEA026D81821680B003276D1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE292DC01820218500EEE353 /* PBXTargetDependency */,
+				DEA026E01821680B003276D1 /* PBXTargetDependency */,
 			);
 			name = ClimbStreetsTests;
 			productName = ClimbStreetsTests;
-			productReference = DE292DBA1820218500EEE353 /* ClimbStreetsTests.xctest */;
+			productReference = DEA026DA1821680B003276D1 /* ClimbStreetsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DE292D971820218500EEE353 /* Project object */ = {
+		DEA026B11821680A003276D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = gennium;
 				TargetAttributes = {
-					DE292DB91820218500EEE353 = {
-						TestTargetID = DE292D9E1820218500EEE353;
+					DEA026D91821680B003276D1 = {
+						TestTargetID = DEA026B81821680A003276D1;
 					};
 				};
 			};
-			buildConfigurationList = DE292D9A1820218500EEE353 /* Build configuration list for PBXProject "ClimbStreets" */;
+			buildConfigurationList = DEA026B41821680A003276D1 /* Build configuration list for PBXProject "ClimbStreets" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = DE292D961820218500EEE353;
-			productRefGroup = DE292DA01820218500EEE353 /* Products */;
+			mainGroup = DEA026B01821680A003276D1;
+			productRefGroup = DEA026BA1821680A003276D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE292D9E1820218500EEE353 /* ClimbStreets */,
-				DE292DB91820218500EEE353 /* ClimbStreetsTests */,
+				DEA026B81821680A003276D1 /* ClimbStreets */,
+				DEA026D91821680B003276D1 /* ClimbStreetsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DE292D9D1820218500EEE353 /* Resources */ = {
+		DEA026B71821680A003276D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE292DAD1820218500EEE353 /* InfoPlist.strings in Resources */,
-				DE292DB51820218500EEE353 /* Images.xcassets in Resources */,
+				DE8F65721827CC5800A3B308 /* 009.jpg in Resources */,
+				DE04CAE7182185AE00FEB617 /* Find.png in Resources */,
+				DEA026D51821680A003276D1 /* Images.xcassets in Resources */,
+				DE04CAE8182185AE00FEB617 /* Friends.png in Resources */,
+				DE8F65711827CC5800A3B308 /* 005.jpg in Resources */,
+				DEA026C71821680A003276D1 /* InfoPlist.strings in Resources */,
+				DEA026D01821680A003276D1 /* Main.storyboard in Resources */,
+				DE04CAE9182185AE00FEB617 /* Guidebooks.png in Resources */,
+				DE04CAEA182185AE00FEB617 /* Profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE292DB81820218500EEE353 /* Resources */ = {
+		DEA026D81821680B003276D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE292DC61820218500EEE353 /* InfoPlist.strings in Resources */,
+				DEA026E61821680B003276D1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DE292D9B1820218500EEE353 /* Sources */ = {
+		DEA026B51821680A003276D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE292DB31820218500EEE353 /* AppDelegate.m in Sources */,
-				DEF38AD1182401EC00ED914F /* AbstractDAO.m in Sources */,
-				DE292DAF1820218500EEE353 /* main.m in Sources */,
-				DEF38AD61824037100ED914F /* ClimbStreets.xcdatamodeld in Sources */,
+				DEA026CD1821680A003276D1 /* AppDelegate.m in Sources */,
+				DE04CAF31821862A00FEB617 /* GuidebooksViewController.m in Sources */,
+				DEA026FB18216901003276D1 /* InitViewController.m in Sources */,
+				DE04CAF01821861300FEB617 /* FriendsViewController.m in Sources */,
+				DEA026C91821680A003276D1 /* main.m in Sources */,
+				DEA0270118216969003276D1 /* HomeViewController.m in Sources */,
+				DE1748EB18227D3000E6EDC2 /* ViewController.m in Sources */,
+				DEA0270618217B4A003276D1 /* ECSlidingViewController.m in Sources */,
+				DE04CAF71821864200FEB617 /* ProfileViewController.m in Sources */,
+				DE26581D182190D200A7A2E4 /* MenuButton.m in Sources */,
+				DEA0270718217B4A003276D1 /* UIImage+ImageWithUIView.m in Sources */,
+				DE04CAFD18218DD000FEB617 /* MenuViewController.m in Sources */,
+				DE04CAED182185F700FEB617 /* FindViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE292DB61820218500EEE353 /* Sources */ = {
+		DEA026D61821680B003276D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE292DC81820218500EEE353 /* ClimbStreetsTests.m in Sources */,
+				DEA026E81821680B003276D1 /* ClimbStreetsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DE292DC01820218500EEE353 /* PBXTargetDependency */ = {
+		DEA026E01821680B003276D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE292D9E1820218500EEE353 /* ClimbStreets */;
-			targetProxy = DE292DBF1820218500EEE353 /* PBXContainerItemProxy */;
+			target = DEA026B81821680A003276D1 /* ClimbStreets */;
+			targetProxy = DEA026DF1821680B003276D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DE292DAB1820218500EEE353 /* InfoPlist.strings */ = {
+		DEA026C51821680A003276D1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DE292DAC1820218500EEE353 /* en */,
+				DEA026C61821680A003276D1 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		DE292DC41820218500EEE353 /* InfoPlist.strings */ = {
+		DEA026CE1821680A003276D1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DE292DC51820218500EEE353 /* en */,
+				DEA026CF1821680A003276D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEA026E41821680B003276D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEA026E51821680B003276D1 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -340,7 +441,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DE292DC91820218500EEE353 /* Debug */ = {
+		DEA026E91821680B003276D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -379,7 +480,7 @@
 			};
 			name = Debug;
 		};
-		DE292DCA1820218500EEE353 /* Release */ = {
+		DEA026EA1821680B003276D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -412,18 +513,11 @@
 			};
 			name = Release;
 		};
-		DE292DCC1820218500EEE353 /* Debug */ = {
+		DEA026EC1821680B003276D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					/Users/4g/Documents/Climbstreets/ClimbStreets,
-					"/Users/4g/https:/gennium.visualstudio.com/DefaultCollection/_git/Climbstreets/ClimbStreets",
-					"/Users/4g/https:/gennium.visualstudio.com/DefaultCollection/_git/Climbstreets/Framework",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClimbStreets/ClimbStreets-Prefix.pch";
 				INFOPLIST_FILE = "ClimbStreets/ClimbStreets-Info.plist";
@@ -432,18 +526,11 @@
 			};
 			name = Debug;
 		};
-		DE292DCD1820218500EEE353 /* Release */ = {
+		DEA026ED1821680B003276D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					/Users/4g/Documents/Climbstreets/ClimbStreets,
-					"/Users/4g/https:/gennium.visualstudio.com/DefaultCollection/_git/Climbstreets/ClimbStreets",
-					"/Users/4g/https:/gennium.visualstudio.com/DefaultCollection/_git/Climbstreets/Framework",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClimbStreets/ClimbStreets-Prefix.pch";
 				INFOPLIST_FILE = "ClimbStreets/ClimbStreets-Info.plist";
@@ -452,7 +539,7 @@
 			};
 			name = Release;
 		};
-		DE292DCF1820218500EEE353 /* Debug */ = {
+		DEA026EF1821680B003276D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -475,7 +562,7 @@
 			};
 			name = Debug;
 		};
-		DE292DD01820218500EEE353 /* Release */ = {
+		DEA026F01821680B003276D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -497,47 +584,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE292D9A1820218500EEE353 /* Build configuration list for PBXProject "ClimbStreets" */ = {
+		DEA026B41821680A003276D1 /* Build configuration list for PBXProject "ClimbStreets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE292DC91820218500EEE353 /* Debug */,
-				DE292DCA1820218500EEE353 /* Release */,
+				DEA026E91821680B003276D1 /* Debug */,
+				DEA026EA1821680B003276D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE292DCB1820218500EEE353 /* Build configuration list for PBXNativeTarget "ClimbStreets" */ = {
+		DEA026EB1821680B003276D1 /* Build configuration list for PBXNativeTarget "ClimbStreets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE292DCC1820218500EEE353 /* Debug */,
-				DE292DCD1820218500EEE353 /* Release */,
+				DEA026EC1821680B003276D1 /* Debug */,
+				DEA026ED1821680B003276D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE292DCE1820218500EEE353 /* Build configuration list for PBXNativeTarget "ClimbStreetsTests" */ = {
+		DEA026EE1821680B003276D1 /* Build configuration list for PBXNativeTarget "ClimbStreetsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE292DCF1820218500EEE353 /* Debug */,
-				DE292DD01820218500EEE353 /* Release */,
+				DEA026EF1821680B003276D1 /* Debug */,
+				DEA026F01821680B003276D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DEF38AD41824037100ED914F /* ClimbStreets.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DEF38AD51824037100ED914F /* ClimbStreets.xcdatamodel */,
-			);
-			currentVersion = DEF38AD51824037100ED914F /* ClimbStreets.xcdatamodel */;
-			path = ClimbStreets.xcdatamodeld;
-			sourceTree = SOURCE_ROOT;
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = DE292D971820218500EEE353 /* Project object */;
+	rootObject = DEA026B11821680A003276D1 /* Project object */;
 }

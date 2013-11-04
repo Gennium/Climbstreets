@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 #import "ECSlidingViewController.h"
 #import "MenuButton.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MenuViewController ()
 @property  NSArray *menu;
@@ -30,8 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    //self.menu = [NSArray arrayWithObjects:@"Home",@"Find",@"Friends",@"Guidebooks",@"Profile",nil];
+
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onClickEvent:) name:@"Click" object:nil];
     buttons = [[NSMutableArray alloc] init];
     CGFloat widthScreen = [UIScreen mainScreen].bounds.size.width;
@@ -68,14 +68,41 @@
         NSString *identifier = [NSString stringWithFormat:@"%@", b.nome];
         
         UIViewController *newTopViewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
-        
-        [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
-            CGRect frame = self.slidingViewController.topViewController.view.frame;
-            self.slidingViewController.topViewController = newTopViewController;
-            self.slidingViewController.topViewController.view.frame = frame;
-            [self.slidingViewController resetTopView];
-        }];
+        [self trocaTela:newTopViewController];
     }
+}
+
+-(void) trocaTela:(UIViewController *) newTopViewController
+{
+    UIViewController *TopViewController    = self.slidingViewController.topViewController;
+    self.slidingViewController.topViewController= newTopViewController;
+    
+    
+    UIView *from = [TopViewController view];
+    UIView *to   = [newTopViewController view];
+    [self.view addSubview: from];
+    
+    CGRect original  = CGRectMake(0, 0, from.frame.size.width, from.frame.size.height);
+    CGRect fromFrame = original;
+    CGRect toFrame   = original;
+    
+    fromFrame.origin.y = [UIScreen mainScreen].bounds.size.height;
+    toFrame.origin.y   = -[UIScreen mainScreen].bounds.size.height;
+    from.layer.zPosition= 2;
+    
+    to.frame= toFrame;
+    
+    [UIView animateWithDuration:0.3f delay:0 usingSpringWithDamping:0.8f initialSpringVelocity:3 options:kNilOptions animations:^{
+        from.frame= original;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:1.2f delay:0 usingSpringWithDamping:1.8f initialSpringVelocity:3 options:kNilOptions animations:^{
+            to.frame= original;
+        } completion:nil];
+        [UIView animateWithDuration:1.5f delay:0.1f usingSpringWithDamping:1.8f initialSpringVelocity:3 options:kNilOptions animations:^{
+            from.frame= fromFrame;
+        } completion:nil];
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning
