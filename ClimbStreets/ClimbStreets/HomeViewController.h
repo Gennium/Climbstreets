@@ -10,5 +10,5 @@
 #import "ViewController.h"
 
 @interface HomeViewController : ViewController
-
+@property (strong, nonatomic) IBOutlet UITableView *homeTable;
 @end

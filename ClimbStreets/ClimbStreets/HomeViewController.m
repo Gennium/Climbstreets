@@ -7,26 +7,39 @@
 //
 
 #import "HomeViewController.h"
-#import "TransitionDelegate.h"
+#import "ParallaxCell.h"
+#import "HomeTableViewController.h"
+
 
 @interface HomeViewController ()
 @end
 
-@implementation HomeViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}		
+@implementation HomeViewController{
+    HomeTableViewController *homeTableController;
+}
+@synthesize homeTable;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    homeTableController = [[HomeTableViewController alloc] init];
+    
+    NSMutableArray *imagesMutable = [[NSMutableArray alloc] init];
+	NSArray *imagePaths = [[NSBundle mainBundle] pathsForResourcesOfType:@"jpg" inDirectory:@"Backgrounds"];
+	for (NSString *path  in imagePaths) {
+		[imagesMutable addObject:[[UIImage alloc] initWithContentsOfFile:path]];
+	}
+	homeTableController._images = imagesMutable;
+    
+	[homeTable registerClass:[ParallaxCell class] forCellReuseIdentifier:[homeTableController getTypeImage]];
+	[homeTable registerClass:[UITableViewCell class] forCellReuseIdentifier:[homeTableController getTypeText]];
+	
+	homeTable.rowHeight = 60.0;
+
+    [homeTable setDelegate: homeTableController];
+    [homeTable setDataSource:homeTableController];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +47,4 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 @end
