@@ -2,21 +2,13 @@
 #import <CoreData/CoreData.h>
 @interface AbstractDAO : NSObject{
     NSString * table;
-    NSString * dataBase;
+    NSManagedObjectContext *managedObjectModel;
 }
 @property(nonatomic, retain) NSString * table;
-@property(nonatomic, retain) NSString * dataBase;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property(nonatomic, retain) NSManagedObjectContext *managedObjectModel;
 
-- (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
-
-
--(id)initWithTable:(NSString*)table_ dataBase:(NSString*)dataBase_;
-
+-(id)initWithTable:(NSString*)table_;
 
 -(NSEntityDescription*)insertNewObjectForEntity;
 -(NSEntityDescription*)getEntity;
