@@ -17,7 +17,7 @@
 	self.imageView.frame = self.contentView.bounds;
 }
 
-- (void)updateContentsRect;
+- (void)updateContentsRect
 {
 	float yPos = 2.0 * (_offset / _totalHeight - 0.5); //normalized y-position (-1 to 1)
 	float k = 0.7f; //parallax ratio
@@ -29,12 +29,12 @@
 	// w in pixels equates to 1.0 in contentRect because the image is square
 	
 	float center = 0.5 - (k - 1.0) * 0.5 * _totalHeight/w * yPos;
-
-	self.imageView.layer.contentsRect = (CGRect){
-		.origin.x = 0.0,
+    
+	[self backgroundView].layer.contentsRect = (CGRect){
+		.origin.x = 0.4,
 		.origin.y = center - 0.5 * h/w,
-		.size.width  =  0.75,
-		.size.height =  0.75,
+		.size.width  =  0.6,
+		.size.height =  0.6,
 	};
 }
 
