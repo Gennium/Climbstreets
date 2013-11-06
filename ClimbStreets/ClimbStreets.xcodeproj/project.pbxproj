@@ -23,15 +23,7 @@
 		DE90A9E9182A924C00D2CDC3 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE90A9E8182A924C00D2CDC3 /* HomeTableViewController.m */; };
 		DE90A9EC182A92A200D2CDC3 /* ParallaxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE90A9EB182A92A200D2CDC3 /* ParallaxCell.m */; };
 		DE97D7E31827D35500F467B9 /* AbstractDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97D7E21827D35500F467B9 /* AbstractDAO.m */; };
-		DE97D7E61827D37000F467B9 /* package.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE97D7E41827D37000F467B9 /* package.xcdatamodeld */; };
-		DE97D7E918281AB800F467B9 /* user.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE97D7E718281AB800F467B9 /* user.xcdatamodeld */; };
-		DE97D7EC18281B9000F467B9 /* UserBO.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97D7EB18281B9000F467B9 /* UserBO.m */; };
-		DE97D7EF18281C0100F467B9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97D7EE18281C0100F467B9 /* User.m */; };
-		DE97D7F41829213900F467B9 /* seta-verde.png in Resources */ = {isa = PBXBuildFile; fileRef = DE97D7F11829213700F467B9 /* seta-verde.png */; };
-		DE97D7F51829213900F467B9 /* ico_routes.png in Resources */ = {isa = PBXBuildFile; fileRef = DE97D7F21829213800F467B9 /* ico_routes.png */; };
-		DE97D7F61829213900F467B9 /* ico_sectors.png in Resources */ = {isa = PBXBuildFile; fileRef = DE97D7F31829213800F467B9 /* ico_sectors.png */; };
-		DE97FEC21829469300DBEE31 /* AreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97FEC11829469300DBEE31 /* AreaViewController.m */; };
-		DE97FEC41829498F00DBEE31 /* back_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = DE97FEC31829498F00DBEE31 /* back_circle.png */; };
+		DE97D7E61827D37000F467B9 /* ClimbStreets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE97D7E41827D37000F467B9 /* ClimbStreets.xcdatamodeld */; };
 		DEA026BD1821680A003276D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026BC1821680A003276D1 /* Foundation.framework */; };
 		DEA026BF1821680A003276D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026BE1821680A003276D1 /* CoreGraphics.framework */; };
 		DEA026C11821680A003276D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA026C01821680A003276D1 /* UIKit.framework */; };
@@ -88,18 +80,7 @@
 		DE90A9EB182A92A200D2CDC3 /* ParallaxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxCell.m; sourceTree = "<group>"; };
 		DE97D7E11827D35500F467B9 /* AbstractDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractDAO.h; path = ClimbStreets/AbstractDAO.h; sourceTree = "<group>"; };
 		DE97D7E21827D35500F467B9 /* AbstractDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractDAO.m; path = ClimbStreets/AbstractDAO.m; sourceTree = "<group>"; };
-		DE97D7E51827D37000F467B9 /* package.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = package.xcdatamodel; sourceTree = "<group>"; };
-		DE97D7E818281AB800F467B9 /* user.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = user.xcdatamodel; sourceTree = "<group>"; };
-		DE97D7EA18281B9000F467B9 /* UserBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserBO.h; sourceTree = "<group>"; };
-		DE97D7EB18281B9000F467B9 /* UserBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserBO.m; sourceTree = "<group>"; };
-		DE97D7ED18281C0100F467B9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		DE97D7EE18281C0100F467B9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		DE97D7F11829213700F467B9 /* seta-verde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seta-verde.png"; sourceTree = "<group>"; };
-		DE97D7F21829213800F467B9 /* ico_routes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_routes.png; sourceTree = "<group>"; };
-		DE97D7F31829213800F467B9 /* ico_sectors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_sectors.png; sourceTree = "<group>"; };
-		DE97FEC01829469300DBEE31 /* AreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaViewController.h; sourceTree = "<group>"; };
-		DE97FEC11829469300DBEE31 /* AreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaViewController.m; sourceTree = "<group>"; };
-		DE97FEC31829498F00DBEE31 /* back_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_circle.png; sourceTree = "<group>"; };
+		DE97D7E51827D37000F467B9 /* ClimbStreets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClimbStreets.xcdatamodel; sourceTree = "<group>"; };
 		DEA026B91821680A003276D1 /* ClimbStreets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimbStreets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA026BC1821680A003276D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DEA026BE1821680A003276D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -154,7 +135,6 @@
 		DE04CAE11821856500FEB617 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				DE97D7F01829103C00F467B9 /* GuideBooks */,
 				DE8F656F1827CC5800A3B308 /* 005.jpg */,
 				DE8F65701827CC5800A3B308 /* 009.jpg */,
 				DE04CAE21821856C00FEB617 /* Menu */,
@@ -192,8 +172,6 @@
 				DE04CAF61821864200FEB617 /* ProfileViewController.m */,
 				DE1748E918227D3000E6EDC2 /* ViewController.h */,
 				DE1748EA18227D3000E6EDC2 /* ViewController.m */,
-				DE97FEC01829469300DBEE31 /* AreaViewController.h */,
-				DE97FEC11829469300DBEE31 /* AreaViewController.m */,
 			);
 			name = Telas;
 			sourceTree = "<group>";
@@ -221,27 +199,11 @@
 		DE97D7E01827D31600F467B9 /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
-				DE97D7EE18281C0100F467B9 /* User.m */,
-				DE97D7ED18281C0100F467B9 /* User.h */,
-				DE97D7E41827D37000F467B9 /* package.xcdatamodeld */,
+				DE97D7E41827D37000F467B9 /* ClimbStreets.xcdatamodeld */,
 				DE97D7E11827D35500F467B9 /* AbstractDAO.h */,
 				DE97D7E21827D35500F467B9 /* AbstractDAO.m */,
-				DE97D7E718281AB800F467B9 /* user.xcdatamodeld */,
-				DE97D7EA18281B9000F467B9 /* UserBO.h */,
-				DE97D7EB18281B9000F467B9 /* UserBO.m */,
 			);
 			name = DataBase;
-			sourceTree = "<group>";
-		};
-		DE97D7F01829103C00F467B9 /* GuideBooks */ = {
-			isa = PBXGroup;
-			children = (
-				DE97FEC31829498F00DBEE31 /* back_circle.png */,
-				DE97D7F11829213700F467B9 /* seta-verde.png */,
-				DE97D7F21829213800F467B9 /* ico_routes.png */,
-				DE97D7F31829213800F467B9 /* ico_sectors.png */,
-			);
-			name = GuideBooks;
 			sourceTree = "<group>";
 		};
 		DEA026B01821680A003276D1 = {
@@ -423,12 +385,8 @@
 				DE8F65711827CC5800A3B308 /* 005.jpg in Resources */,
 				DEA026C71821680A003276D1 /* InfoPlist.strings in Resources */,
 				DEA026D01821680A003276D1 /* Main.storyboard in Resources */,
-				DE97D7F61829213900F467B9 /* ico_sectors.png in Resources */,
-				DE97D7F41829213900F467B9 /* seta-verde.png in Resources */,
-				DE97D7F51829213900F467B9 /* ico_routes.png in Resources */,
 				DE04CAE9182185AE00FEB617 /* Guidebooks.png in Resources */,
 				DE04CAEA182185AE00FEB617 /* Profile.png in Resources */,
-				DE97FEC41829498F00DBEE31 /* back_circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,11 +406,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA026CD1821680A003276D1 /* AppDelegate.m in Sources */,
-				DE97D7EC18281B9000F467B9 /* UserBO.m in Sources */,
-				DE97D7EF18281C0100F467B9 /* User.m in Sources */,
 				DE04CAF31821862A00FEB617 /* GuidebooksViewController.m in Sources */,
 				DEA026FB18216901003276D1 /* InitViewController.m in Sources */,
 				DE04CAF01821861300FEB617 /* FriendsViewController.m in Sources */,
+<<<<<<< HEAD
 				DE97FEC21829469300DBEE31 /* AreaViewController.m in Sources */,
 				DE90A9EC182A92A200D2CDC3 /* ParallaxCell.m in Sources */,
 				DEA026C91821680A003276D1 /* main.m in Sources */,
@@ -460,6 +417,14 @@
 				DE1748EB18227D3000E6EDC2 /* ViewController.m in Sources */,
 				DE97D7E61827D37000F467B9 /* package.xcdatamodeld in Sources */,
 				DE97D7E918281AB800F467B9 /* user.xcdatamodeld in Sources */,
+=======
+				DE8EC9BD1828044A0011A231 /* HomeTableViewController.m in Sources */,
+				DEA026C91821680A003276D1 /* main.m in Sources */,
+				DEA0270118216969003276D1 /* HomeViewController.m in Sources */,
+				DE1748EB18227D3000E6EDC2 /* ViewController.m in Sources */,
+				DE97D7E61827D37000F467B9 /* ClimbStreets.xcdatamodeld in Sources */,
+				DE8EC9D31828069B0011A231 /* ParallaxCell.m in Sources */,
+>>>>>>> 02570b6ff3f599488235d395928f6d1588d5c47f
 				DEA0270618217B4A003276D1 /* ECSlidingViewController.m in Sources */,
 				DE97D7E31827D35500F467B9 /* AbstractDAO.m in Sources */,
 				DE04CAF71821864200FEB617 /* ProfileViewController.m in Sources */,
@@ -690,23 +655,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DE97D7E41827D37000F467B9 /* package.xcdatamodeld */ = {
+		DE97D7E41827D37000F467B9 /* ClimbStreets.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DE97D7E51827D37000F467B9 /* package.xcdatamodel */,
+				DE97D7E51827D37000F467B9 /* ClimbStreets.xcdatamodel */,
 			);
-			currentVersion = DE97D7E51827D37000F467B9 /* package.xcdatamodel */;
-			path = package.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		DE97D7E718281AB800F467B9 /* user.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DE97D7E818281AB800F467B9 /* user.xcdatamodel */,
-			);
-			currentVersion = DE97D7E818281AB800F467B9 /* user.xcdatamodel */;
-			path = user.xcdatamodeld;
+			currentVersion = DE97D7E51827D37000F467B9 /* ClimbStreets.xcdatamodel */;
+			path = ClimbStreets.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

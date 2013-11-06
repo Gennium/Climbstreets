@@ -39,7 +39,6 @@ static NSString *TextCell = @"Text";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
 }
 
 - (void) loadContents {
@@ -61,18 +60,21 @@ static NSString *TextCell = @"Text";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	BOOL imageCell = indexPath.row % 2 == 0;
-	
-	if (imageCell) {
-		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ImageCell forIndexPath:indexPath];
-		
-		cell.imageView.image = _images[(indexPath.row / 2) % _images.count];
-		return cell;
-	} else {
-		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TextCell forIndexPath:indexPath];
-		cell.textLabel.text = @"Text";
-		return cell;
-	}
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ImageCell forIndexPath:indexPath];
+    
+    UIImageView *view = [[UIImageView alloc] initWithImage:_images[indexPath.row % [_images count]]];
+    
+    [self.view addSubview:view];
+    
+    cell.textLabel.text=  @"Informacao dos Feeds Amigos";
+    cell.textLabel.textAlignment= NSTextAlignmentCenter;
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.backgroundColor= [UIColor clearColor];
+    cell.backgroundView.layer.contentsRect = CGRectMake(0.4, 0.4, 0.6, 0.6);
+    cell.backgroundView= view;
+    cell.selectionStyle= UITableViewCellSelectionStyleNone;
+    
+    return cell;
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -83,27 +85,17 @@ static NSString *TextCell = @"Text";
     
     id a = [b indexPathsForVisibleRows];
 	for (NSIndexPath *indexPath in a) {
-		BOOL imageCell = indexPath.row % 2 == 0;
-		if (imageCell) {
-			ParallaxCell *cell = (ParallaxCell *)[b cellForRowAtIndexPath:indexPath];
-            
-			CGRect cellRect = [b convertRect:[b rectForRowAtIndexPath:indexPath] toView:b.superview];
-			cell.offset = cellRect.origin.y;
-			cell.totalHeight = b.frame.size.height;
-		}
+		ParallaxCell *cell = (ParallaxCell *)[b cellForRowAtIndexPath:indexPath];
+        
+		CGRect cellRect = [b convertRect:[b rectForRowAtIndexPath:indexPath] toView:b.superview];
+		cell.offset = cellRect.origin.y;
+		cell.totalHeight = b.frame.size.height;
 	}
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    BOOL imageCell = indexPath.row % 2 == 0;
-    NSLog(@"%d", indexPath.row);
-    if( imageCell ){
-        UIImage *i = _images[indexPath.row % [_images count]];
-        NSLog(@" WidthOriginal Image= %f --- HeightOriginal = %f ---- Width tela = %f ", i.size.width, i.size.height, [UIScreen mainScreen].bounds.size.width   );
-        return i.size.height / i.size.width * [UIScreen mainScreen].bounds.size.width;
-    }
-    
-    return 30.0f;
+    UIImage *i = _images[indexPath.row % [_images count]];
+    return i.size.height / i.size.width * [UIScreen mainScreen].bounds.size.width;
 }
 @end
