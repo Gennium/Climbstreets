@@ -17,7 +17,10 @@
 		DE04CAF71821864200FEB617 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04CAF61821864200FEB617 /* ProfileViewController.m */; };
 		DE04CAFD18218DD000FEB617 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04CAFC18218DD000FEB617 /* MenuViewController.m */; };
 		DE1748EB18227D3000E6EDC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1748EA18227D3000E6EDC2 /* ViewController.m */; };
+		DE1BF48E182815C5004F45B3 /* Backgrounds in Resources */ = {isa = PBXBuildFile; fileRef = DE1BF48D182815C5004F45B3 /* Backgrounds */; };
 		DE26581D182190D200A7A2E4 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE26581C182190D200A7A2E4 /* MenuButton.m */; };
+		DE8EC9BD1828044A0011A231 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8EC9BC1828044A0011A231 /* HomeTableViewController.m */; };
+		DE8EC9D31828069B0011A231 /* ParallaxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8EC9D21828069B0011A231 /* ParallaxCell.m */; };
 		DE8F65711827CC5800A3B308 /* 005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE8F656F1827CC5800A3B308 /* 005.jpg */; };
 		DE8F65721827CC5800A3B308 /* 009.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE8F65701827CC5800A3B308 /* 009.jpg */; };
 		DE97D7E31827D35500F467B9 /* AbstractDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = DE97D7E21827D35500F467B9 /* AbstractDAO.m */; };
@@ -76,8 +79,13 @@
 		DE04CAFC18218DD000FEB617 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ViewController/MenuViewController.m; sourceTree = "<group>"; };
 		DE1748E918227D3000E6EDC2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ViewController/ViewController.h; sourceTree = "<group>"; };
 		DE1748EA18227D3000E6EDC2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ViewController/ViewController.m; sourceTree = "<group>"; };
+		DE1BF48D182815C5004F45B3 /* Backgrounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Backgrounds; sourceTree = "<group>"; };
 		DE26581B182190D200A7A2E4 /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuButton.h; path = ViewController/MenuButton.h; sourceTree = "<group>"; };
 		DE26581C182190D200A7A2E4 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuButton.m; path = ViewController/MenuButton.m; sourceTree = "<group>"; };
+		DE8EC9BB1828044A0011A231 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeTableViewController.h; path = ViewController/HomeTableViewController.h; sourceTree = "<group>"; };
+		DE8EC9BC1828044A0011A231 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeTableViewController.m; path = ViewController/HomeTableViewController.m; sourceTree = "<group>"; };
+		DE8EC9D11828069B0011A231 /* ParallaxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxCell.h; sourceTree = "<group>"; };
+		DE8EC9D21828069B0011A231 /* ParallaxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxCell.m; sourceTree = "<group>"; };
 		DE8F656F1827CC5800A3B308 /* 005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005.jpg; sourceTree = "<group>"; };
 		DE8F65701827CC5800A3B308 /* 009.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 009.jpg; sourceTree = "<group>"; };
 		DE97D7E11827D35500F467B9 /* AbstractDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractDAO.h; path = ClimbStreets/AbstractDAO.h; sourceTree = "<group>"; };
@@ -170,6 +178,7 @@
 		DE04CAF81821870100FEB617 /* Telas */ = {
 			isa = PBXGroup;
 			children = (
+				DE8EC9BA182804340011A231 /* TableViews */,
 				DEA026FF18216969003276D1 /* HomeViewController.h */,
 				DEA0270018216969003276D1 /* HomeViewController.m */,
 				DE04CAEB182185F700FEB617 /* FindViewController.h */,
@@ -208,6 +217,15 @@
 			name = Menu;
 			sourceTree = "<group>";
 		};
+		DE8EC9BA182804340011A231 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				DE8EC9BB1828044A0011A231 /* HomeTableViewController.h */,
+				DE8EC9BC1828044A0011A231 /* HomeTableViewController.m */,
+			);
+			name = TableViews;
+			sourceTree = "<group>";
+		};
 		DE97D7E01827D31600F467B9 /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +255,7 @@
 		DEA026B01821680A003276D1 = {
 			isa = PBXGroup;
 			children = (
+				DE1BF48D182815C5004F45B3 /* Backgrounds */,
 				DE97D7E01827D31600F467B9 /* DataBase */,
 				DEA026C21821680A003276D1 /* ClimbStreets */,
 				DEA026E11821680B003276D1 /* ClimbStreetsTests */,
@@ -312,6 +331,8 @@
 		DEA026F118216883003276D1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DE8EC9D11828069B0011A231 /* ParallaxCell.h */,
+				DE8EC9D21828069B0011A231 /* ParallaxCell.m */,
 				DE04CAFA1821871C00FEB617 /* Menu */,
 				DE04CAF91821871000FEB617 /* Init */,
 				DE04CAF81821870100FEB617 /* Telas */,
@@ -410,6 +431,7 @@
 				DE04CAE7182185AE00FEB617 /* Find.png in Resources */,
 				DEA026D51821680A003276D1 /* Images.xcassets in Resources */,
 				DE04CAE8182185AE00FEB617 /* Friends.png in Resources */,
+				DE1BF48E182815C5004F45B3 /* Backgrounds in Resources */,
 				DE8F65711827CC5800A3B308 /* 005.jpg in Resources */,
 				DEA026C71821680A003276D1 /* InfoPlist.strings in Resources */,
 				DEA026D01821680A003276D1 /* Main.storyboard in Resources */,
@@ -443,12 +465,21 @@
 				DE04CAF31821862A00FEB617 /* GuidebooksViewController.m in Sources */,
 				DEA026FB18216901003276D1 /* InitViewController.m in Sources */,
 				DE04CAF01821861300FEB617 /* FriendsViewController.m in Sources */,
+<<<<<<< HEAD
 				DE97FEC21829469300DBEE31 /* AreaViewController.m in Sources */,
+=======
+				DE8EC9BD1828044A0011A231 /* HomeTableViewController.m in Sources */,
+>>>>>>> 15f811102e6bd4b04d9ff7b22c1e759283594881
 				DEA026C91821680A003276D1 /* main.m in Sources */,
 				DEA0270118216969003276D1 /* HomeViewController.m in Sources */,
 				DE1748EB18227D3000E6EDC2 /* ViewController.m in Sources */,
+<<<<<<< HEAD
+				DE97D7E61827D37000F467B9 /* ClimbStreets.xcdatamodeld in Sources */,
+				DE8EC9D31828069B0011A231 /* ParallaxCell.m in Sources */,
+=======
 				DE97D7E61827D37000F467B9 /* package.xcdatamodeld in Sources */,
 				DE97D7E918281AB800F467B9 /* user.xcdatamodeld in Sources */,
+>>>>>>> 4945e340e3fed068a3ad22161ecdd3800cd68d16
 				DEA0270618217B4A003276D1 /* ECSlidingViewController.m in Sources */,
 				DE97D7E31827D35500F467B9 /* AbstractDAO.m in Sources */,
 				DE04CAF71821864200FEB617 /* ProfileViewController.m in Sources */,

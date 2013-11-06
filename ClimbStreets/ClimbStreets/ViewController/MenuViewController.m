@@ -68,6 +68,10 @@
         NSString *identifier = [NSString stringWithFormat:@"%@", b.nome];
         
         UIViewController *newTopViewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
+        
+        if( [self.slidingViewController.topViewController isKindOfClass:[newTopViewController class]] )
+            return;
+        
         [self trocaTela:newTopViewController];
     }
 }
