@@ -7,6 +7,8 @@
 //
 
 #import "GuidebooksViewController.h"
+#import "UserBO.h"
+#import "User.h"
 @interface GuidebooksViewController ()
 
 @end
@@ -25,13 +27,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(IBAction)openAreaView{
+    [self presentViewController:[
+                                 [UIStoryboard storyboardWithName:@"Main" bundle:nil]
+                                 instantiateViewControllerWithIdentifier:@"AreaView"] animated:YES completion:nil];
 }
 
 @end

@@ -10,5 +10,5 @@
 #import "ViewController.h"
 
 @interface GuidebooksViewController : ViewController
-
+-(IBAction)openAreaView;
 @end
