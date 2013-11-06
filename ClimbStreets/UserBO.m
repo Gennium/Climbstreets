@@ -10,4 +10,33 @@
 
 @implementation UserBO
 
+
+-(id)init {
+    self =[ super initWithTable:@"User" dataBase:@"user"];
+    if(self){
+        
+    }
+    return self;
+}
+
+
+-(User*)loadCurrent{
+    
+    NSMutableArray *values = [self loadAll];
+    
+    if([values count] == 0 ){
+        [self generateUser];
+        values = [self loadAll];
+    }
+    User *u = [values objectAtIndex:0];
+    return u;
+}
+// isso vai sair....
+-(void)generateUser{
+    NSEntityDescription * userNew = [self insertNewObjectForEntity];
+    [userNew setValue:@"Usuario Teste" forKey:@"name"];
+    [userNew setValue: @"121aas5811sdcac" forKey:@"myhash"];
+    [self saveEntity];
+}
+
 @end

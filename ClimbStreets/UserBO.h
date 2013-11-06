@@ -7,7 +7,10 @@
 //
 
 #import "AbstractDAO.h"
-
+#import "User.h"
 @interface UserBO : AbstractDAO
 
+-(id)init;
+-(User*)loadCurrent;
+-(void)generateUser;
 @end
